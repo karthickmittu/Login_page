@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@drawable/ic_lightbulb_outline_black_24dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+    <RelativeLayout
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rl1"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:textColor="#000000"
+            android:background="@drawable/main"
+            android:layout_height="50dp"
+            android:paddingLeft="5dp"
+            android:hint="E-mail Address"
+            android:drawableLeft="@drawable/ic_mail"
+            android:id="@+id/ed1"
+
+            />
+
+        <EditText
+            android:layout_marginTop="10dp"
+            android:paddingLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:drawableLeft="@drawable/ic_lock"
+            android:textColor="#000000"
+            android:background="@drawable/main"
+            android:layout_below="@+id/ed1"
+            android:hint="Password"
+            android:id="@+id/ed2"/>
+        <Button
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ed2"
+            android:layout_centerHorizontal="true"
+            android:background="#F44336"
+            android:id="@+id/bt1"
+            android:text="Login"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#071149"
+            android:textColor="#ffffff"
+            android:text="SIGN IN WITH FACEBOOK"
+            android:id="@+id/bt2"
+            android:layout_below="@+id/bt1"
+            android:layout_marginTop="20dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIGN IN WITH TWITTER"
+            android:background="#00BCD4"
+            android:textColor="#ffffff"
+            android:id="@+id/bt3"
+            android:layout_below="@+id/bt2"
+            android:layout_marginTop="10dp"/>
+
+        <RelativeLayout
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Forget password?"
+               android:textColor="#ffffff"
+               android:layout_alignParentLeft="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New here? signup"
+                android:textColor="#ffffff"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
